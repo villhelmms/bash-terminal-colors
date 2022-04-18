@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #Terminal Color Scheme
-cp .bashrc .bashrc.backup
+cp ~/.bashrc ~/.bashrc.backup
 
-sudo mv /files/bash.bashrc /etc/bash.bashrc
+sudo mv bash.bashrc /etc/bash.bashrc
 
-sudo mv /files/DIR_COLORS /etc/
+sudo mv DIR_COLORS /etc/
 
-mv /files/.bashrc ~/.bashrc
+mv .bashrc /.bashrc
 
 #Pacman Colorful Output
 cp /etc/pacman.conf /etc/pacman.conf.backup
