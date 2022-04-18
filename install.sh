@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #Terminal Color Scheme
-cp ~/.bashrc ~/.bashrc.backup
+cp /etc/bash.bashrc /etc/bash.bashrc.backup #sudo
 
-sudo mv bash.bashrc /etc/bash.bashrc
+mv bash.bashrc /etc/bash.bashrc #sudo
 
-sudo mv DIR_COLORS /etc/
+mv DIR_COLORS /etc/ #sudo
 
 mv .bashrc /.bashrc
 
@@ -15,6 +15,6 @@ cp /etc/pacman.conf /etc/pacman.conf.backup
 sed -i 's/#Color/Color/g' /etc/pacman.conf
 
 #Syntax Highlighting in Nano
-sudo cp /etc/nanorc /etc/nanorc.backup
+cp /etc/nanorc /etc/nanorc.backup #sudo
 
-sudo echo include "/usr/share/nano/*.nanorc" >> /etc/nanorc
+echo include "/usr/share/nano/*.nanorc" >> /etc/nanorc #sudo
